@@ -1,0 +1,27 @@
+﻿@page "/datebinding"
+@*
+	ASP.NET Core Blazor data binding > Format Strings
+	https://docs.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-5.0#format-strings-1
+*@
+<p>
+	<label>
+		<code>yyyy-MM-dd</code> format:
+		<input @bind="startDate" @bind:format="yyyy-MM-dd" />
+
+	</label>
+</p>
+<p>
+	<label>
+		<code>yyyy-MM-dd</code> format:
+		<input @bind="startDate" type="date" @bind:format="yyyy-MM-dd" />
+
+	</label>
+</p>
+
+<p>
+	<code>startDate</code>: @startDate.ToString("D")
+</p>
+
+@code {
+	private DateTime startDate = DateTime.Now; // new(2020, 1, 1);
+}

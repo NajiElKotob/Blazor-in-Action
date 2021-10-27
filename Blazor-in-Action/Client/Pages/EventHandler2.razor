@@ -1,0 +1,29 @@
+﻿@page "/EventHandler2"
+
+<h3>EventHandler2</h3>
+
+<h4>@currentHeading</h4>
+
+<p>
+    <label>
+        New title
+        <input @bind="newHeading" />
+    </label>
+    <button @onclick="UpdateHeading">
+        Update heading
+    </button>
+</p>
+
+@code {
+    private string currentHeading = "Initial heading";
+    private string newHeading;
+    private int counter = 0;
+
+    private async Task UpdateHeading()
+    {
+        await Task.Delay(2000);
+
+        currentHeading = $"{newHeading}!!!";
+        newHeading = currentHeading + " - " + (++counter).ToString(); //DateTime.Now.ToString();
+    }
+}
