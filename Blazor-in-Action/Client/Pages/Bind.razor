@@ -1,0 +1,31 @@
+﻿@page "/bind"
+
+@*
+    ASP.NET Core Blazor data binding
+    https://docs.microsoft.com/en-us/aspnet/core/blazor/components/data-binding?view=aspnetcore-5.0
+*@
+
+<h3>Bind</h3>
+
+<p>
+    <input @bind="inputValue" /> field
+</p>
+<p>
+    <input @bind="inputValue" @bind:event="oninput" /> field/oninput
+</p>
+<p>
+    <input @bind="InputValue" /> property
+</p>
+
+<ul>
+    <li><code>inputValue (Field)</code>: @inputValue</li>
+
+    <li><code>InputValue (Property)</code>: @InputValue</li>
+
+</ul>
+
+@code {
+    private string inputValue;
+
+    private string InputValue { get; set; }
+}
