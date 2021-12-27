@@ -1,0 +1,35 @@
+﻿@if (ShowDialog)
+{
+    <div class="dialog-container">
+        <div class="dialog">
+            <div class="dialog-title">@Title</div>
+            <div class="dialog-message">@Message</div>
+            <div class="dialog-buttons">
+                <button class="btn btn-primary btn-sm mr-2" @onclick="OnOk">
+                    OK
+                </button>
+                <button class="btn btn-secondary btn-sm" @onclick="OnCancel">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public bool ShowDialog { get; set; }
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnOk { get; set; }
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnCancel { get; set; }
+
+    [Parameter]
+    public RenderFragment Title { get; set; }
+
+    [Parameter]
+    public RenderFragment Message { get; set; }
+
+}

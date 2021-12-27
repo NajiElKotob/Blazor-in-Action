@@ -1,0 +1,53 @@
+﻿@page "/dialog1"
+
+<h3>Dialog 1</h3>
+
+<button @onclick="OpenDialog">Show Dialog</button>
+
+<Dialog ShowDialog="showDialog"
+        OnCancel="DialogCancelHandler"
+        OnOk="DialogOkHandler">
+    <Title>
+        Item# (@(Items.Count + 1))
+    </Title>
+
+    <Message>
+        New Item: <input @bind="NewItem" />
+    </Message>
+
+</Dialog>
+
+<ol>
+    @foreach (var item in Items)
+    {
+        <li>@item</li>
+    }
+</ol>
+
+@code {
+
+    private bool showDialog = false;
+    private void OpenDialog()
+    {
+        showDialog = true;
+    }
+
+    private string NewItem;
+    private List<string> Items = new List<string>();
+
+    private void DialogCancelHandler(MouseEventArgs e)
+    {
+        NewItem = "";
+        showDialog = false;
+    }
+    private void DialogOkHandler(MouseEventArgs e)
+    {
+        if (!string.IsNullOrEmpty(NewItem))
+        {
+            Items.Add(NewItem);
+            NewItem = "";
+        }
+        showDialog = false;
+    }
+}
+
