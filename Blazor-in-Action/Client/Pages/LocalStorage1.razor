@@ -1,0 +1,55 @@
+﻿@page "/localstorage1"
+
+@using Blazor_in_Action.Client.Classes
+@inject IJSRuntime js
+
+
+
+<h2>Local Storage</h2>
+<h3>Local Storage Service</h3>
+
+<p>The Web Storage API for JavaScript provides mechanisms for browsers to store key/value pairs. For each web browser, the size of data that can be stored in web storage is at least 5 MB per origin. The localStorage is defined in the Web Storage API for JavaScript. We need to use JS interop to access localStorage on the browser.</p>
+<p>Developer tools (F12) > Application > Local Storage</p>
+
+
+
+<div>
+    Data:
+    <input type="text"
+           @bind="data"
+           size="50" />
+</div>
+<div class="pt-2">
+    <button class="btn btn-primary"
+            @onclick="SaveToLocalStorageAsync">
+        Save to Local Storage
+    </button>
+
+    <button class="btn btn-primary"
+        @onclick="ReadFromLocalStorageAsync">
+    Read from Local Storage
+</button>
+</div>
+
+@code {
+    private string data;
+    private LocalStorageService localStorage;
+
+    protected override void OnInitialized()
+    {
+        localStorage = new LocalStorageService(js);
+    }
+
+    async Task SaveToLocalStorageAsync()
+    {
+        await localStorage.SetItemAsync<string>(
+            "localStorageData",
+            data);
+    }
+
+    async Task ReadFromLocalStorageAsync()
+{
+    data = await localStorage.GetItemAsync<string>(
+        "localStorageData");
+}
+}
