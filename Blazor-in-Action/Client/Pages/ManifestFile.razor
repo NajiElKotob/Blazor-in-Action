@@ -7,9 +7,38 @@
 </p>
 
 <p>
-    PWA Builder was founded by Microsoft as a community guided, open source project to help move PWA adoption forward. 
-    <a target="_blank" href="https://www.pwabuilder.com/">www.pwabuilder.com</a>
+    PWA Builder was founded by Microsoft as a community guided, open source project to help move PWA adoption forward
+    <a target="_blank" href="https://www.pwabuilder.com/">www.pwabuilder.com</a> a manifest file must include the <strong>name</strong> of the application and at least one <strong>icon</strong>. 
 </p>
+
+<hr />
+<p><em>Example:</em></p>
+<pre>
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "A Blazor example",
+  "short_name": "Blazor",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "./",
+  "background_color": "transparent",
+  "theme_color": "transparent",
+  "description": "This is an example Blazor website.",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "url": "https://example.net",
+  "screenshots": []
+}
+</pre>
 
 
 
