@@ -16,3 +16,7 @@ openWeatherInterop.getPosition = async function () {
         throw Error("Geolocation is not supported by this browser.");
     };
 }
+
+/*
+Learn more "Geolocation.getCurrentPosition()" https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
+*/
