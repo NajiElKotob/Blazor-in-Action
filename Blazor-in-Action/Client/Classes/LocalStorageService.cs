@@ -14,7 +14,7 @@ public class LocalStorageService : ILocalStorageService
     public async Task<T> GetItemAsync<T>(string key)
     {
         var json = await js.InvokeAsync<string>(
-        "BlazorInActionInterop.getLocalStorage",
+        "localStorageInterop.getLocalStorage",
         key);
         return string.IsNullOrEmpty(json)
                 ? default
@@ -24,7 +24,7 @@ public class LocalStorageService : ILocalStorageService
     public async Task SetItemAsync<T>(string key, T item)
     {
         await js.InvokeVoidAsync(
-        "BlazorInActionInterop.setLocalStorage",
+        "localStorageInterop.setLocalStorage",
         key,
         JsonSerializer.Serialize(item));
     }

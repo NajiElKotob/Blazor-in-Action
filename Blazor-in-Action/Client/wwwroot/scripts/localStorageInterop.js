@@ -1,10 +1,10 @@
 ﻿
-var BlazorInActionInterop = {}; //namespace
+var localStorageInterop = {}; //namespace
 
-BlazorInActionInterop.setLocalStorage = function (key, data) {
+localStorageInterop.setLocalStorage = function (key, data) {
     localStorage.setItem(key, data);
 }
-BlazorInActionInterop.getLocalStorage = function (key) {
+localStorageInterop.getLocalStorage = function (key) {
     return localStorage.getItem(key);
 }
 
