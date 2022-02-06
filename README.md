@@ -8,3 +8,6 @@
 
 ## Local Storage
 * [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API) - developer.mozilla.org
+
+## Tips and Tricks
+* [Dynamically setting the page title in a Blazor application](https://www.meziantou.net/dynamically-setting-the-page-title-in-a-blazor-application.htm) - meziantou.net
