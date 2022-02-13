@@ -16,3 +16,4 @@
 ## Tips and Tricks
 * [Dynamically setting the page title in a Blazor application](https://www.meziantou.net/dynamically-setting-the-page-title-in-a-blazor-application.htm) - meziantou.net
 * [3 Ways to Communicate Between Components in Blazor](https://chrissainty.com/3-ways-to-communicate-between-components-in-blazor/) - chrissainty.com
+* [How to copy text to the clipboard in Blazor?](https://www.syncfusion.com/faq/blazor/javascript-interop/how-to-copy-text-to-the-clipboard-in-blazor) - syncfusion.com
