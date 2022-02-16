@@ -8,3 +8,13 @@
 
 ## Local Storage
 * [Using the Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API) - developer.mozilla.org
+
+## Articles
+* [Working with Query Strings in Blazor](https://chrissainty.com/working-with-query-strings-in-blazor/) - chrissainty.com
+
+
+## Tips and Tricks
+* [Dynamically setting the page title in a Blazor application](https://www.meziantou.net/dynamically-setting-the-page-title-in-a-blazor-application.htm) - meziantou.net
+* [3 Ways to Communicate Between Components in Blazor](https://chrissainty.com/3-ways-to-communicate-between-components-in-blazor/) - chrissainty.com
+* [How to copy text to the clipboard in Blazor?](https://www.syncfusion.com/faq/blazor/javascript-interop/how-to-copy-text-to-the-clipboard-in-blazor) - syncfusion.com
+* [How do I serialize and deserialize JSON in a Blazor application?](https://www.syncfusion.com/faq/blazor/general/how-do-i-serialize-and-deserialize-json-in-a-blazor-application) - syncfusion.com
