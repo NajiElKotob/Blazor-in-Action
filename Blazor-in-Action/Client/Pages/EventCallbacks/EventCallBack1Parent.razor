@@ -1,0 +1,27 @@
+﻿@page "/eventcallback1"
+
+@using Blazor_in_Action.Client.Pages.EventCallbacks
+
+<h3>EventCallBack1Parent</h3>
+
+<!-- 
+Parent Component
+
+3 Ways to Communicate Between Components in Blazor
+https://chrissainty.com/3-ways-to-communicate-between-components-in-blazor/
+-->
+
+<EventCallBack1Child OnClick="ClickHandler"></EventCallBack1Child>
+
+<p>@message</p>
+
+@code {
+
+    string message = "Hello from ParentComponent";
+
+    void ClickHandler(string newMessage)
+    {
+        message = newMessage;
+    }
+
+}
