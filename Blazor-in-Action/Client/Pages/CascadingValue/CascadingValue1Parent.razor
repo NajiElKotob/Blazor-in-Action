@@ -1,0 +1,15 @@
+﻿@page "/cascadingvalue1"
+
+<h3>CascadingValue1Parent</h3>
+
+<!--
+    Understanding Cascading Values & Cascading Parameters
+    https://chrissainty.com/understanding-cascading-values-and-cascading-parameters/
+-->
+<CascadingValue Value="@TheAnswer">
+    <CascadingValue1Child></CascadingValue1Child>
+</CascadingValue>
+
+@code {
+    int TheAnswer = 47;
+}
