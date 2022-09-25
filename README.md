@@ -13,6 +13,8 @@
 * [Working with Query Strings in Blazor](https://chrissainty.com/working-with-query-strings-in-blazor/) - chrissainty.com
 * [ASP.NET Core Blazor state management](https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management) - learn.microsoft.com
 * [How to Pass Arguments to Your onclick Functions in Blazor](https://www.telerik.com/blogs/how-to-pass-arguments-to-your-onclick-functions-blazor) - telerik.com
+* [3+1 ways to manage state in your Blazor application](https://jonhilton.net/blazor-state-management/) - jonhilton.net
+
 
 ## Libraries
 * [BlazorBarcodeScanner.ZXing.JS](https://www.nuget.org/packages/BlazorBarcodeScanner.ZXing.JS)
