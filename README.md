@@ -14,6 +14,9 @@
 * [ASP.NET Core Blazor state management](https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management) - learn.microsoft.com
 * [How to Pass Arguments to Your onclick Functions in Blazor](https://www.telerik.com/blogs/how-to-pass-arguments-to-your-onclick-functions-blazor) - telerik.com
 
+## Libraries
+* [BlazorBarcodeScanner.ZXing.JS](https://www.nuget.org/packages/BlazorBarcodeScanner.ZXing.JS)
+
 ## Tips and Tricks
 * [Dynamically setting the page title in a Blazor application](https://www.meziantou.net/dynamically-setting-the-page-title-in-a-blazor-application.htm) - meziantou.net
 * [3 Ways to Communicate Between Components in Blazor](https://chrissainty.com/3-ways-to-communicate-between-components-in-blazor/) - chrissainty.com
