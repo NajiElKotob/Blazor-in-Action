@@ -1,7 +1,13 @@
 ﻿@page "/passparameterchild1/{passValue}"
+@inject NavigationManager NavigationManager
+
+
 <h3>Pass Parameter - Child 1</h3>
 
-@myValue
+@myValue.ToString()
+<br />
+<button @onclick="() => NavigateToSubChild1(int.Parse(myValue))">Pass Parameter - Sub Child 1</button>
+
 
 @code {
 
@@ -12,6 +18,11 @@
     protected override void OnParametersSet()
     {
         //the param will be set now
-         myValue = passValue;
+        myValue = passValue;
+    }
+
+    void NavigateToSubChild1(int param)
+    {
+        NavigationManager.NavigateTo($"/passparametersubchild1/{param}");
     }
 }

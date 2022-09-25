@@ -6,13 +6,22 @@
 <h3>Pass Parameter - Parent 1</h3>
 
 
-<button @onclick="() => NavigateToChild1(10)">Go to Pass Parameter Child 1</button>
+<button @onclick="() => NavigateToChild1(10)">Pass Parameter - Child 1</button>
 
 @code {
 
-    private 
+
+
     void NavigateToChild1(int param)
     {
         NavigationManager.NavigateTo($"/passparameterchild1/{param}");
     }
+
+    void NavigateToChild2(int param)
+    {
+        NavigationManager.NavigateTo($"/passparameterchild2/{param}");
+    }
+
+
 }
+

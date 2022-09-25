@@ -1,0 +1,13 @@
+﻿@page "/passparametersubchild1/{passValue}"
+
+
+
+<h3>Pass Parameter - Sub Child 1</h3>
+
+@passValue
+
+@code {
+
+    [Parameter]
+    public string passValue { get; set; }
+}
