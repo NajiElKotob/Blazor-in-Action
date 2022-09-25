@@ -1,0 +1,17 @@
+﻿@page "/passparameterchild1/{passValue}"
+<h3>Pass Parameter - Child 1</h3>
+
+@myValue
+
+@code {
+
+    [Parameter]
+    public string passValue { get; set; }
+    private string myValue { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        //the param will be set now
+         myValue = passValue;
+    }
+}
