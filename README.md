@@ -11,7 +11,7 @@
 
 ## Articles
 * [Working with Query Strings in Blazor](https://chrissainty.com/working-with-query-strings-in-blazor/) - chrissainty.com
-
+* [ASP.NET Core Blazor state management](https://learn.microsoft.com/en-us/aspnet/core/blazor/state-management) - learn.microsoft.com
 
 ## Tips and Tricks
 * [Dynamically setting the page title in a Blazor application](https://www.meziantou.net/dynamically-setting-the-page-title-in-a-blazor-application.htm) - meziantou.net
