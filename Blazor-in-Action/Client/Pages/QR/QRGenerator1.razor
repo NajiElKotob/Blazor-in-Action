@@ -20,15 +20,12 @@
     private void RenderQRCode()
     {
 
-        using (MemoryStream ms = new MemoryStream())
-        {
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(inputValue, QRCodeGenerator.ECCLevel.Q);
             BitmapByteQRCode qrCode = new BitmapByteQRCode(qrCodeData);
             byte[] qrCodeImage = qrCode.GetGraphic(20);
 
-            qrImage = "data:image/png;base64," + Convert.ToBase64String(qrCodeImage.ToArray());
-        }
+            qrImage = "data:image/png;base64," + Convert.ToBase64String(qrCodeImage.ToArray());    
 
     }
 
