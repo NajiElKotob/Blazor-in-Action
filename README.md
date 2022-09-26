@@ -18,6 +18,7 @@
 
 ## Libraries
 * [BlazorBarcodeScanner.ZXing.JS](https://www.nuget.org/packages/BlazorBarcodeScanner.ZXing.JS)
+* [QR Coder](https://www.nuget.org/packages/QRCoder/1.4.3#show-readme-container)
 
 ## Tips and Tricks
 * [Dynamically setting the page title in a Blazor application](https://www.meziantou.net/dynamically-setting-the-page-title-in-a-blazor-application.htm) - meziantou.net
