@@ -1,6 +1,6 @@
 ﻿@page "/passparameterparent1"
 
-@inject NavigationManager NavigationManager
+@inject NavigationManager navigationManager
 
 
 <h3>Pass Parameter - Parent 1</h3>
@@ -8,13 +8,15 @@
 
 <button @onclick="() => NavigateToChild1(10)">Pass Parameter - Child 1</button>
 
+<button @onclick="() => NavigateToChild1(100)">Pass 100 to child 1</button>
+
 @code {
 
 
 
     void NavigateToChild1(int param)
     {
-        NavigationManager.NavigateTo($"/passparameterchild1/{param}");
+        navigationManager.NavigateTo($"/passparameterchild1/{param}");
     }
 
    /* void NavigateToChild2(int param)
